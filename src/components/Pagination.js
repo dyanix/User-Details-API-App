@@ -10,13 +10,7 @@ const Pagination = ({usersPerPage,totalUsers,paginate}) => {
     <nav>
     <ul className='pagination'>
       {pageNumbers.map(number => (
-        <li key={number} className='pagination-item'>
-          {/* <a onClick={() => paginate(number)} href={`https://userdetailsapp.netlify.app/page/{number}`} className='page-link'>
-            {number}
-          </a> */}
-          {/* <a onClick={() => paginate(number)} href="http://localhost:3000/!#" className='page-link'>
-            {number}
-          </a> */}
+        <li key={number} className='pagination-item'> 
           <button onClick={() => paginate(number)} className='page-link'>{number}</button>
         </li>
       ))}
