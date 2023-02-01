@@ -1,38 +1,108 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: rgb(219, 230, 253);
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 2rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.card {
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1.5rem;
+  color: #15133c;
+}
+
+
+@media (max-width: 998px) {
+  html {
+    font-size: 56%;
+  }
+
+  .card {
+    min-width: 45rem;
+    padding: 2.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 768px) {
+  html {
+    font-size: 51%;
+  }
+
+  .card {
+    min-width: 35rem;
+    padding: 2rem;
+  }
+}
+
+.card-button {
+  flex-direction: row;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-button  {
+  color: #92b4ec;
+  font-weight: 400;
+  font-size: 1.6rem;
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-button :last-child {
+  color: rgb(246, 242, 242);
+  background-color: #eb0b0b;
+  border-radius: 1em;
+
 }
+
+
+
+.details-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1em;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
